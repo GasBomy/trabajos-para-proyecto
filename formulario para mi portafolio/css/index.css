@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: #ffff99;
+	font-family: 'Belanosima', sans-serif;
+}
+body{
+	background: #131313;
+}
+
+main{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column;
+	gap: 30px;
+}
+h1{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+form{
+	width: 80%;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-flow: column;
+	gap: 35px;
+}
+textarea{
+	resize: none;
+	width: 90%;
+	color: #131313;
+	font-size: 1.3rem;
+	padding-left: 5px;
+}
+.pri, .sec, .ter, .cua{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: start;
+	width: 100%;
+
+}
+input{
+	font-size: 1.3rem;
+	height: 30px;
+	width: 80%;
+	color: #131313;
+	padding-left: 5px;
+}
+select{
+	width: 80%;
+	height: 30px;
+	color: #131313;
+	font-size: 1.3rem;
+	padding-left: 5px;
+}
+.interno{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+}
+.intercirculos{
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+
+}
+.circulos{
+	height: 20px;
+	width: 30px;
+}
+.qui input{
+	height: 20px;
+	width: 30px;
+
+}
+.sex{
+	display: flex;
+	justify-content: space-between;
+	width: 20%;
+	gap: 20px;
+}
+button{
+	width: 100px;
+	height: 40px;
+	color: #131313;
+}
+option{
+	color: #131313;
+}
+.imprimir{
+	padding-bottom: 20px;
+}

@@ -1,0 +1,145 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	position: absolute;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	width: 100%;
+	height: 100vh;
+	background: #1b205b;
+	z-index: 800;
+	padding: 2px 5%;
+}
+.circulos{
+	width: 10px;
+	height: 10px;
+	background: linear-gradient(45deg, #1b205b,#2036a1,#2e51ed,#316bf4,#5d8df5,#80abfa,#9cbef6,#b5d2fb);
+	border-radius: 50%;
+	aspect-ratio: 1/1;
+	position: absolute;
+	z-index: 900;
+	top: 0;
+	animation: animate 5s linear infinite;
+	box-shadow: 0 0 10px #fff, 
+	0 0 20px #fff, 
+	0 0 30px #fff,
+	0 0 50px #fff;
+}
+
+
+@keyframes animate{
+	0%{
+		transform: translateY(0vh);
+		background-position: 0 0;
+		opacity: 1;
+
+	}
+	50%{
+		opacity: 1;
+		background-position: 400px 0;
+
+	}
+	100%{
+		background-position: 0 0;
+		transform: translateY(100vh);
+		opacity: 1;
+		background:;
+		box-shadow: 0 0 10px white;
+		width: 5px;
+		aspect-ratio: 1/1;
+
+	}
+}
+section{
+	position: absolute;
+	z-index: 999;
+	display: flex;
+	flex-flow: column;
+	align-content: center;
+	width: 80%;
+}
+
+main{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 10px;
+	padding-bottom: 20px;
+}
+article{
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	width: 200px;
+	height: 200px;
+	border: 2px solid #016968;
+	border-radius: 20px;
+	transition: 1s;
+	animation: rotatee 20s linear infinite ;
+	background: linear-gradient(45deg, red,blue,green,whitesmoke,red,blue,green,whitesmoke);
+}
+
+article:hover{
+	transform: scale(1.3) rotate3d(0, 1.2, 2, 360deg);
+
+
+}
+
+
+h1{
+	text-align: center;
+	font-size: 50px;
+	padding-bottom: 30px;
+	color: #016968;
+	text-shadow: 0 0 5px #fff, 
+	0 0 6px #fff, 
+	0 0 7px #fff,
+	0 0 8px #fff;
+}
+
+img{
+	width: 100px;
+}
+
+
+h2{
+	font-family: sans-serif;
+	font-size: 20px;
+	font-weight: 800;
+	text-align: center;
+	color: #016968;
+	text-shadow: 0 0 5px #fff, 
+	0 0 6px #fff, 
+	0 0 7px #fff,
+	0 0 8px #fff;
+}
+span{
+	font-family: sans-serif;
+	font-weight: 700;
+	color: #016968;
+	text-shadow: 0 0 5px #fff, 
+	0 0 6px #fff, 
+	0 0 7px #fff,
+	0 0 8px #fff;
+}
+
+/*@keyframes rotatee{
+	0%{
+		background-position: 0 0;
+
+	}
+	50%{
+		background-position: 400px 800px;
+
+	}
+	100%{
+		background-position: 0 0;
+
+	}
+}*/

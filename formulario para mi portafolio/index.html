@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="./css/index.css">
+	<title>FORMULARIO</title>
+</head>
+<body>
+	<main>
+		<h1>LLENAR PLANILLA CON DATOS PERSONALES</h1>
+		<form id="formulario">
+			<div class="pri">
+				<div class="interno">			    
+					<label for="name">Name</label>
+			        <input type="text" id="name" name="name">
+			    </div>
+
+			    <div class="interno">			    
+			    	<label for="surname">Surname</label>
+			        <input type="text" id="surname" name="surname">
+			    </div>
+			</div>
+
+			<div class="sec">
+				<div class="interno">			    
+					<label for="age">Age</label>
+			        <input type="number" id="age" name="age">
+			    </div>
+
+			    <div class="interno">			    
+				    <label for="date">Birthdate</label>
+			        <input type="date" id="date" name="date">	
+			    </div>
+			</div>
+
+			<div class="ter">
+				<div class="interno">			    
+					<label for="province">Province</label>
+			        <select id="province" name="province">
+				        <optgroup>
+					        <option value="Buenos Aires">Buenos Aires</option>
+					        <option value="Catamarca">Catamarca</option>
+					        <option value="Chaco">Chaco</option>
+					        <option value="Chubut">Chubut</option>
+					        <option value="Cordoba">Cordoba</option>
+					        <option value="Corrientes">Corrientes</option>
+					        <option value="Entre Rios">Entre Rios</option>
+					        <option value="Formosa">Formosa</option>
+					        <option value="Jujuy">Jujuy</option>
+					        <option value="La Pampa">La Pampa</option>
+					        <option value="La Rioja">La Rioja</option>
+					        <option value="Mendoza">Mendoza</option>
+					        <option value="Misiones">Misiones</option>
+					        <option value="Neuquen">Neuquen</option>
+					        <option value="Rio Negro">Rio Negro</option>
+					        <option value="Salta">Salta</option>
+					        <option value="San Juan">San Juan</option>
+					        <option value="San Luis">San Luis</option>
+					        <option value="Santa Cruz">Santa Cruz</option>
+					        <option value="Santa Fe">Santa Fe</option>
+					        <option value="Santiago del Estero">Santiago del Estero</option>
+					        <option value="Tierra del Fuego">Tierra del Fuego</option>
+					        <option value="Tucuman">Tucuman</option>
+				        </optgroup>
+			        </select>
+			    </div>
+
+			    <div class="intercirculos">			    
+			    	<label for="gender">Gender</label>
+			        Man<input class="circulos" type="radio" name="gender" value="Man" id="gender">
+			        Women<input class="circulos" type="radio" name="gender" value="Woman" id="gender">
+			        Other<input class="circulos" type="radio" name="gender" value="Other" id="gender">		
+			    </div>
+			</div>
+
+			<div class="cua">
+				<div class="interno">			    
+					<label for="email">Email</label>
+			        <input type="email" id="email" name="email">
+			    </div>
+
+			    <div class="interno">			    
+			    	<label for="coment"></label>
+			        <textarea id="coment" name="coment" cols="30" rows="10" placeholder="Comments"></textarea>
+			    </div>
+			</div>
+
+			<div class="qui">
+			    <label for="term">Terms and Conditions</label>
+			    <input type="checkbox" id="term" name="term">				
+			</div>
+
+			
+			<div class="sex">
+				<button type="submit" value="submit">submit</button>
+				<button type="reset" value="reset">Reset</button>
+			</div>
+
+		</form>
+
+		<a class="imprimir" href="./pages/imprimir-datos.html">IMPRIMIR DATOS</a>
+	</main>
+<script src="./js/index.js"></script>
+</body>
+</html>
